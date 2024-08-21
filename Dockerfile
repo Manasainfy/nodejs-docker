@@ -1,6 +1,6 @@
 FROM node:16
-WORKDIR /app
-COPY package*.json ./
+WORKDIR /myapp
+COPY package*.json .
 RUN npm install
 COPY . .
 EXPOSE 8081
